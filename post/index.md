@@ -990,6 +990,10 @@ What decides the rest is the CMB:
 
 Infinity remains a bad question; whether we live off-centre in a large rotating patch is a good one, and the data sections above are how to ask it.
 
+# Acknowledgment
+
+Thanks to Claude Opus 5.5 to writing the Lean proofs, and finishing the calculations.
+
 # Appendix A: the Lean certificates
 
 The code is in the repository of this post[2](#code).
