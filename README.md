@@ -1,5 +1,10 @@
 # Proofs and checks for "Is the universe infinite?"
 
+This repository, https://github.com/hadilq/is-the-universe-infinite, holds the Lean proofs and the
+Python checks of the post [Is the universe infinite?](https://hadilq.com/posts/is-the-universe-infinite/)
+(source: https://gitlab.com/hadilq/hadilq.gitlab.io/-/tree/main/content/posts/2026-10-05-is-the-universe-infinite).
+Theorem, proposition and corollary numbers below refer to the post.
+
 A light ray climbs a short way (`r >> Δx >> δr`) across a patch of a rotating
 metric, near the equator and near the pole.  Light is a bundle of null
 geodesics; the period is the length of the timelike separation between two
@@ -48,3 +53,18 @@ from https://github.com/des-science/DES-SN5YR (`git clone --depth 1 --filter=blo
 ## Nix
 
 `nix build` runs `lake build` and the fast checks; `nix build .#full` adds `--slow`.
+
+## Cite
+
+If you found this work useful, please consider citing:
+
+```
+@misc{hadilq2026Infinite,
+    author = {{Hadi Lashkari Ghouchani and Claude (Anthropic)}},
+    note = {Published electronically at \url{https://hadilq.com/posts/is-the-universe-infinite/}},
+    gitlab = {Gitlab source at \href{https://gitlab.com/hadilq/hadilq.gitlab.io/-/tree/main/content/posts/2026-10-05-is-the-universe-infinite}},
+    github = {Proofs and checks at \href{https://github.com/hadilq/is-the-universe-infinite}},
+    title = {Is the universe infinite?},
+    year={2026},
+}
+```

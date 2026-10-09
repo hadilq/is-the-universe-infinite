@@ -36,7 +36,7 @@ which also force you to have access to the infinite distance away.
 Nobody will ever can do it and asking it is not a good question at all!
 Good questions are the questions that have answer, and finding them is hard.
 
-In the Geodesic monism[^gmono],
+In the Geodesic monism[1](#gmono),
 I already described what will happen if you move in a direction for a long time.
 You will lose dimensions,
 since the action of that theory allows the metric to diverge asymptotically.
@@ -57,7 +57,7 @@ That is why the background of the sky is dark, and it is the first answer this p
 Given that the current measurement of the curvature excludes the patch of our observable universe to live on any rotational solution that its radius is smaller than multiple size of the patch,
 here we are seeking any evidence, or semi-evidence, to support such a solution.
 
-The plan is short to state. Put the observable universe in a small patch of a rotating metric, far from its centre. Send a light ray a short horizontal distance across the patch while it climbs a little. Climbing costs the light energy, so it arrives redshifted. Compute that redshift for four rotating metrics, in a patch on the equator and in a patch at the pole, and ask the supernova catalogues what they say about it. Two new solutions of geodesic monism come with it: the general rotating dipole in 1 + 4 dimensions, and a three-sphere rotating along \\( \phi \\) in 1 + 1 + 4, with a stable orbit that geodesics leave only through its rotation axis. Every equation below is proved in the text, and every algebraic step is checked by Lean or by SymPy; the code is in the appendices.
+The plan is short to state. Put the observable universe in a small patch of a rotating metric, far from its centre. Send a light ray a short horizontal distance across the patch while it climbs a little. Climbing costs the light energy, so it arrives redshifted. Compute that redshift for four rotating metrics, in a patch on the equator and in a patch at the pole, and ask the supernova catalogues what they say about it. Two new solutions of geodesic monism come with it: the general rotating dipole in 1 + 4 dimensions, and a three-sphere rotating along \\( \phi \\) in 1 + 1 + 4, with a stable orbit that geodesics leave only through its rotation axis. Every equation below is proved in the text, and every algebraic step is checked by Lean or by SymPy; the code is in the appendices and in its repository[2](#code).
 
 # Flat, up to the error
 
@@ -67,7 +67,7 @@ Spatial curvature is reported as \\( \Omega\_K \\). Planck 2018 temperature, pol
 \Omega\_K = 0.0007 \pm 0.0019,
 \\]
 
-consistent with a flat background inside that bar.[^planck] The local distance ladder gives \\( H\_0 = 73.04 \pm 1.04 \\, \mathrm{km\\,s^{-1}\\,Mpc^{-1}} \\).[^shoes] Infinity is not settled by that bar, and a curved background whose scale is many times the size of the patch is not excluded by it either. That is the room this post uses.
+consistent with a flat background inside that bar.[3](#planck) The local distance ladder gives \\( H\_0 = 73.04 \pm 1.04 \\, \mathrm{km\\,s^{-1}\\,Mpc^{-1}} \\).[4](#shoes) Infinity is not settled by that bar, and a curved background whose scale is many times the size of the patch is not excluded by it either. That is the room this post uses.
 
 # The setting
 
@@ -109,7 +109,7 @@ which is exactly "\\( \delta r / \Delta x \sim \varepsilon \ll 1 \\)". Every res
 \text{ZAMO:}\\ U = \frac{\xi + \omega\\,\partial\_\phi}{N}, \quad \omega = -\frac{g(\xi,\partial\_\phi)}{g\_{\phi\phi}}, \quad N^2 = -g(\xi,\xi) + \frac{g(\xi,\partial\_\phi)^2}{g\_{\phi\phi}} .
 \\]
 
-The ZAMOs are the zero-angular-momentum observers of Bardeen, Press and Teukolsky.[^bpt] They are dragged by the rotation; the static ones are held against it. The four-velocity is written \\( U \\) throughout, because \\( u \\) is a coordinate in geodesic monism.
+The ZAMOs are the zero-angular-momentum observers of Bardeen, Press and Teukolsky.[5](#bpt) They are dragged by the rotation; the static ones are held against it. The four-velocity is written \\( U \\) throughout, because \\( u \\) is a coordinate in geodesic monism.
 
 # Light is a bundle of null geodesics
 
@@ -286,7 +286,7 @@ Three things follow. On the equator the first-order static redshift \\( M\delta 
 
 ## The metric
 
-One spin, the second spin zero, \\( \theta \in [0, \pi/2] \\), \\( \psi \\) held fixed:[^myersperry]
+One spin, the second spin zero, \\( \theta \in [0, \pi/2] \\), \\( \psi \\) held fixed:[6](#myersperry)
 
 \\[
 ds^2 = -dt^2 + \frac{\mu}{\rho^2}(dt - a\sin^2\theta\\, d\phi)^2 + \frac{\rho^2}{r^2+a^2-\mu}\\,dr^2 + \rho^2 d\theta^2 + (r^2+a^2)\sin^2\theta\\, d\phi^2 + r^2\cos^2\theta\\, d\psi^2 .
@@ -335,13 +335,13 @@ At leading order (Corollary 7):
 \text{pole:}\quad z \simeq -\frac{a^2\mu}{r^5}\\,\Delta x\left(\vartheta\sin\gamma - \frac{\Delta x}{2r}\right).
 \\]
 
-Every coefficient is one power of \\( r \\) steeper than in Kerr, as \\( \mu/r^2 \\) replaces \\( 2M/r \\). There is no stable circular orbit for massive particles in this geometry,[^frolov] so there is no stable radius to report; the Kerr cut \\( r > 6M \\) has no five-dimensional analogue.
+Every coefficient is one power of \\( r \\) steeper than in Kerr, as \\( \mu/r^2 \\) replaces \\( 2M/r \\). There is no stable circular orbit for massive particles in this geometry,[7](#frolov) so there is no stable radius to report; the Kerr cut \\( r > 6M \\) has no five-dimensional analogue.
 
 # Geodesic monism
 
 ## The field equations of the action
 
-Geodesic monism takes the action[^gmono]
+Geodesic monism takes the action[1](#gmono)
 
 \\[
 S[g] = \int R\_{ab}R^{ab} \sqrt{-g}\\, d^n x .
@@ -514,7 +514,7 @@ h\_2 = \frac{J^2}{6r^4} - \frac{2JK}{3r^2} - \frac{2JB}{3r} + \frac{JQr}{3} - \f
 
 *solves \\( E\_{ab} = 0 \\) for all ten constants.*
 
-*Proof.* The transverse space is flat, so the null Kaluza reduction of the geodesic-monism note leaves two equations:[^gmono] the fourth-order Maxwell equation \\( \hat\Box\hat\nabla^kF\_{ki} = 0 \\), and the back-reaction \\( \hat\Delta(\hat\Delta H - \tfrac14F^2) = \tfrac12 J\_kJ^k + F^{ik}\hat\nabla\_iJ\_k \\) with \\( J\_i = \hat\nabla^kF\_{ki} \\).
+*Proof.* The transverse space is flat, so the null Kaluza reduction of the geodesic-monism note leaves two equations:[1](#gmono) the fourth-order Maxwell equation \\( \hat\Box\hat\nabla^kF\_{ki} = 0 \\), and the back-reaction \\( \hat\Delta(\hat\Delta H - \tfrac14F^2) = \tfrac12 J\_kJ^k + F^{ik}\hat\nabla\_iJ\_k \\) with \\( J\_i = \hat\nabla^kF\_{ki} \\).
 
 - **The potential.** For \\( A\_\phi = f\sin^2\theta \\) the current is \\( J\_\phi = (f'' - 2f/r^2)\sin^2\theta \\), and the Maxwell equation is the same operator applied twice. Its four solutions are \\( J/r \\) and \\( Br^2 \\), which carry no current, and the partner modes \\( Kr \\) and \\( Qr^4 \\), with \\( J\_\phi = 2(5Qr^3 - K)\sin^2\theta/r \\).
 - **The back-reaction.** The sources contain only \\( P\_0 \\) and \\( P\_2 \\). On \\( r^m P\_\ell \\) the Laplacian acts as \\( m(m+1) - \ell(\ell+1) \\), so each power inverts by division, except at a resonance, where \\( r^m\ln r \\) appears. That happens once: \\( K^2/r^2 \\) in \\( P\_0 \\) gives \\( K^2\ln r \\). Inverting the Laplacian twice gives \\( h\_0 \\) and \\( h\_2 \\).
@@ -554,7 +554,7 @@ This family has only two angles beside \\( r \\), so it cannot host a 1 + 3 univ
 
 ## Why another solution
 
-In the null Kaluza form \\( \Gamma^u{}\_{ab} = 0 \\), as shown in the hydrogen note.[^gmh] So \\( u' \\) is constant along every geodesic: \\( u \\) is a direction everything drifts along at a fixed rate, not one in which space can bend. The space of a universe like ours has to live on angles. Both solutions above have only two angles, \\( (\theta, \phi) \\), beside \\( u \\) and \\( r \\): they are \\( 1 + 2 + 2 \\). A \\( 1 + 3 \\) universe needs one time, one \\( u \\), one \\( r \\), and three angles: \\( (t, u, r, \psi, \theta, \phi) \\). The observer's space is then a patch of the three-sphere at radius \\( r \\), near its equator or its pole, and \\( r \\) is the one extra direction: the transverse space is \\( \mathbb{R} \times S^3 \\) seen from such a patch. Then \\( r \\) must not leak.
+In the null Kaluza form \\( \Gamma^u{}\_{ab} = 0 \\), as shown in the hydrogen note.[8](#gmh) So \\( u' \\) is constant along every geodesic: \\( u \\) is a direction everything drifts along at a fixed rate, not one in which space can bend. The space of a universe like ours has to live on angles. Both solutions above have only two angles, \\( (\theta, \phi) \\), beside \\( u \\) and \\( r \\): they are \\( 1 + 2 + 2 \\). A \\( 1 + 3 \\) universe needs one time, one \\( u \\), one \\( r \\), and three angles: \\( (t, u, r, \psi, \theta, \phi) \\). The observer's space is then a patch of the three-sphere at radius \\( r \\), near its equator or its pole, and \\( r \\) is the one extra direction: the transverse space is \\( \mathbb{R} \times S^3 \\) seen from such a patch. Then \\( r \\) must not leak.
 
 The transverse space is written with the third angle added the same way \\( \theta \\) was added to \\( \phi \\):
 
@@ -734,7 +734,7 @@ This section has a different setup from the patch, even though it uses the same 
 
 The two share only what holds for any two observers in a stationary metric: Theorem 3 and Proposition 5, which fix every redshift by the two ends of the light's path. Nothing below uses the local coordinates, the coefficients \\( C \\) and \\( D \\), or the regime of the patch.
 
-No observer is special here. The redshift a ray carries depends only on how far it has come from its own source, which is the Copernican principle. With the redshift fixed by the ends, it keeps growing with distance only if the source's own well keeps deepening relative to the space around it, its walls rising linearly without end. A Ricci-flat solution cannot do that: its potential levels off like \\( 1/r \\). Geodesic monism has exactly the mode that does, with \\( c\_2 < 0 \\), and it is the one that keeps its solutions from being Ricci flat at infinity.[^gmh]
+No observer is special here. The redshift a ray carries depends only on how far it has come from its own source, which is the Copernican principle. With the redshift fixed by the ends, it keeps growing with distance only if the source's own well keeps deepening relative to the space around it, its walls rising linearly without end. A Ricci-flat solution cannot do that: its potential levels off like \\( 1/r \\). Geodesic monism has exactly the mode that does, with \\( c\_2 < 0 \\), and it is the one that keeps its solutions from being Ricci flat at infinity.[8](#gmh)
 
 **Theorem 18 (the hydrogen is not Ricci flat).** *The only non-zero component of the Ricci tensor of the hydrogen metric (Theorem 9) is*
 
@@ -784,8 +784,8 @@ The dark sky is the answer to Olbers's paradox that space itself gives here. It 
 
 **A tired light that does not blur.** Measured by the static clocks it passes, light climbing out of its source loses frequency all the way, because \\( \alpha \\) keeps growing away from the source through a space filled with \\( R\_{uu} \\). Its conserved energy \\( k\cdot\xi \\) does not change and nothing scatters it, so the images stay sharp. The bundle is focused only through the tidal matrix \\( -p^2\partial\_i\partial\_jH \\). On the screen of a ray leaving the source, the \\( c\_2 \\) and \\( c\_3 \\) modes make that matrix \\( (c\_2/r + 2c\_3) \\) times the identity: pure focusing, with no shear to distort the image (`check/hubble.py`). The old tired light scattered photons off matter and blurred distant images, and this one does not. It also passes the two tests that killed the old one:
 
-- **Time dilation.** The redshift is a ratio of clock rates, so every interval at the source is stretched by \\( 1 + z \\), as supernova light curves and spectra show.[^blondin]
-- **Surface brightness.** Light moves on null geodesics and photons are conserved, so Etherington's reciprocity \\( d\_L = (1 + z)^2d\_A \\) holds. Surface brightness then dims as \\( (1 + z)^{-4} \\), the Tolman signal, which the measurements are consistent with once the luminosity evolution of galaxies is included.[^tolman]
+- **Time dilation.** The redshift is a ratio of clock rates, so every interval at the source is stretched by \\( 1 + z \\), as supernova light curves and spectra show.[9](#blondin)
+- **Surface brightness.** Light moves on null geodesics and photons are conserved, so Etherington's reciprocity \\( d\_L = (1 + z)^2d\_A \\) holds. Surface brightness then dims as \\( (1 + z)^{-4} \\), the Tolman signal, which the measurements are consistent with once the luminosity evolution of galaxies is included.[10](#tolman)
 
 # What the data fix
 
@@ -821,7 +821,7 @@ So the horizontal redshift is a dipole along \\( -\hat e\_\theta \\), perpendicu
 
 ## Pantheon+
 
-`check/pantheon_fit.py` fits the public Pantheon+ distances with the full statistical and systematic covariance,[^pantheon][^pantheondata] for \\( 0.015 < z < 0.06 \\), with \\( d \\) the comoving distance of the background. First, the plain dipole:
+`check/pantheon_fit.py` fits the public Pantheon+ distances with the full statistical and systematic covariance,[11](#pantheon)[12](#pantheondata) for \\( 0.015 < z < 0.06 \\), with \\( d \\) the comoving distance of the background. First, the plain dipole:
 
 | redshift column | supernovae | \\( \delta H/H \\) along the Shapley core | free dipole |
 |---|---|---|---|
@@ -838,7 +838,7 @@ Then Corollary 7. The orientation of the local frame is scanned, the coefficient
 | equator, ZAMO: \\( b\_4, b\_7 \\) | \\( D\_\theta/C\_\theta = +1.4 \pm 1.0 \\); \\( \Delta\chi^2 = 1.2 \\) for 2 more parameters (\\( p = 0.55 \\)) | \\( D\_\theta/C\_\theta = -0.62 \pm 0.41 \\); \\( \Delta\chi^2 = 1.8 \\) (\\( p = 0.41 \\)) |
 | pole: \\( b\_4, b\_2 \\) | \\( C\_\theta/\ell^2 = (-1.1 \pm 0.4) \times 10^{-7}\\,\mathrm{Mpc^{-2}} \\); \\( \Delta\chi^2 = 6.8 \\) for 2 more (\\( p = 0.03 \\)) | \\( (+0.9 \pm 0.4) \times 10^{-7}\\,\mathrm{Mpc^{-2}} \\); \\( \Delta\chi^2 = 4.5 \\) (\\( p = 0.11 \\)) |
 
-On the equator with static observers, Corollary 7 is exactly a free dipole, and it reproduces the free-dipole \\( \chi^2 \\). Putting the dropped \\( C\_r \\), \\( D\_r \\) and \\( (\Delta x)^2 \\) terms back, the full Proposition 6, improves \\( \chi^2 \\) by \\( 7.0 \\) for 4 more parameters (\\( p = 0.14 \\)) with static observers and \\( 7.6 \\) for 6 (\\( p = 0.27 \\)) with ZAMOs (`zHD`; \\( p = 0.24 \\) and \\( 0.39 \\) for `zCMB`). The data agree that those terms carry no significant weight. The two columns differ because `zHD` already subtracts a peculiar-velocity model built around these same structures.[^pv] That cuts both ways. The flow corrections are built from the same structures that could carry this signal, so the model is best fitted to uncorrected redshifts, with the flow model as a competitor rather than subtracted first. And analyses that model radially varying flows find the local \\( H\_0 \\) anisotropy consistent with \\( \Lambda \\)CDM bulk flows,[^noaniso] so a patch dipole has to beat that explanation, not only the isotropic one.
+On the equator with static observers, Corollary 7 is exactly a free dipole, and it reproduces the free-dipole \\( \chi^2 \\). Putting the dropped \\( C\_r \\), \\( D\_r \\) and \\( (\Delta x)^2 \\) terms back, the full Proposition 6, improves \\( \chi^2 \\) by \\( 7.0 \\) for 4 more parameters (\\( p = 0.14 \\)) with static observers and \\( 7.6 \\) for 6 (\\( p = 0.27 \\)) with ZAMOs (`zHD`; \\( p = 0.24 \\) and \\( 0.39 \\) for `zCMB`). The data agree that those terms carry no significant weight. The two columns differ because `zHD` already subtracts a peculiar-velocity model built around these same structures.[13](#pv) That cuts both ways. The flow corrections are built from the same structures that could carry this signal, so the model is best fitted to uncorrected redshifts, with the flow model as a competitor rather than subtracted first. And analyses that model radially varying flows find the local \\( H\_0 \\) anisotropy consistent with \\( \Lambda \\)CDM bulk flows,[14](#noaniso) so a patch dipole has to beat that explanation, not only the isotropic one.
 
 ## What that means for each metric
 
@@ -874,7 +874,7 @@ The same two numbers act at every distance. That is what lets very different dat
 `check/sphere_fit.py` fits this pattern, with the full statistical and systematic covariance of each sample, to:
 
 - **Pantheon+**, with both redshift columns. It uses three windows: the local one of the previous section, the SH0ES Hubble-flow window \\( 0.0233 < z < 0.15 \\), and every non-calibrator supernova from \\( z = 0.0233 \\) to \\( 2.26 \\). The covariance's peculiar-velocity terms are built for `zHD`, so the `zCMB` rows are somewhat optimistic.
-- **DES-Dovekie**, the 2026 recalibration of the DES five-year sample, from its public release.[^dovekie] There are 1623 DES supernovae with host positions and 191 low-redshift ones, positioned by matching their names to Pantheon+. The low-redshift ones are mostly the same supernovae as in Pantheon+, so DES-Dovekie is an independent calibration, not an independent sky.
+- **DES-Dovekie**, the 2026 recalibration of the DES five-year sample, from its public release.[15](#dovekie)[16](#dovekiedata) There are 1623 DES supernovae with host positions and 191 low-redshift ones, positioned by matching their names to Pantheon+. The low-redshift ones are mostly the same supernovae as in Pantheon+, so DES-Dovekie is an independent calibration, not an independent sky.
 
 The residual is converted with the full \\( \Delta\mu = -(5/\ln 10)\left[(1 + z)D'/D - 1\right] z\_{\rm patch} \\) of the previous section, shift and dimming together. That matters beyond \\( z \sim 0.1 \\). An offset and an isotropic \\( d^2 \\) term are always free. On the wide windows, so are the background's \\( \Omega\_m \\) and \\( w \\), which this metric does not supply. The axis \\( \hat e\_a \\) is scanned over the sky, and \\( A\_1\hat e\_1 \\) and \\( A\_2 \\) are linear.
 
@@ -895,7 +895,7 @@ What the table says, against the prediction that \\( A\_1 \\) and \\( A\_2 \\) a
 
 - **The d² term does not scale as d².** In `zHD`, \\( A\_2 \\) is about ten times smaller over all redshifts than locally (\\( -11 \\) against \\( -108 \\)), and the same holds in `zCMB`. The windows overlap and the errors are conditional, so this is indicative, about \\( 2\sigma \\). DES-Dovekie, with the same low-redshift supernovae recalibrated, agrees in sign and size locally, but does not constrain the axis.
 - **The dipole is steady within its errors in `zHD`** (\\( 4.4 \\), \\( 3.6 \\), \\( 2.7 \\)) and **falls in `zCMB`** (\\( 9.9 \\) to \\( 6.0 \\)). DES-Dovekie finds none to speak of. A dipole amplitude with a free direction is biased upward when it is near its error.
-- **The local dipole is consistent with the known bulk flow.** A dipole linear in \\( d \\) gives a uniformly sampled bulk-flow survey of radius \\( R \\) the velocity \\( \tfrac34 cA\_1R \\). Inside \\( 150h^{-1} \\) Mpc the `zCMB` dipole gives \\( 456 \pm 85 \\) km/s, \\( 28^\circ \\) from the Cosmicflows-4 bulk flow of \\( 387 \pm 28 \\) km/s toward \\( (l, b) = (297^\circ, -6^\circ) \\).[^cf4b] `zHD`, which subtracts a flow model, keeps \\( 204 \pm 80 \\) km/s. The CF4 window is not a uniform sphere, so the match is approximate.
+- **The local dipole is consistent with the known bulk flow.** A dipole linear in \\( d \\) gives a uniformly sampled bulk-flow survey of radius \\( R \\) the velocity \\( \tfrac34 cA\_1R \\). Inside \\( 150h^{-1} \\) Mpc the `zCMB` dipole gives \\( 456 \pm 85 \\) km/s, \\( 28^\circ \\) from the Cosmicflows-4 bulk flow of \\( 387 \pm 28 \\) km/s toward \\( (l, b) = (297^\circ, -6^\circ) \\).[17](#cf4b) `zHD`, which subtracts a flow model, keeps \\( 204 \pm 80 \\) km/s. The CF4 window is not a uniform sphere, so the match is approximate.
 
 ## The Shapley dipole and the axis of rotation
 
@@ -920,7 +920,7 @@ The ranges on \\( \hat e\_a \\) are \\( \Delta\chi^2 < 1 \\) along the circle.
 
 ## The CMB
 
-If the CMB is the cosmological background, it comes from beyond the farthest supernova. If its light crosses the same patch, the patch puts \\( A\_1d \\) into its dipole and \\( \tfrac12A\_2d^2(\hat n\cdot\hat e\_a)^2 \\) into its quadrupole. The observed dipole is \\( \Delta T/T = 1.23 \times 10^{-3} \\), and \\( 1.5 \times 10^{-3} \\) more is allowed for any kinematic part. The quadrupole is \\( D\_2 = 226^{+533}\_{-132}\\,\mu\mathrm{K}^2 \\),[^quad] and the upper value is used. Then
+If the CMB is the cosmological background, it comes from beyond the farthest supernova. If its light crosses the same patch, the patch puts \\( A\_1d \\) into its dipole and \\( \tfrac12A\_2d^2(\hat n\cdot\hat e\_a)^2 \\) into its quadrupole. The observed dipole is \\( \Delta T/T = 1.23 \times 10^{-3} \\), and \\( 1.5 \times 10^{-3} \\) more is allowed for any kinematic part. The quadrupole is \\( D\_2 = 226^{+533}\_{-132}\\,\mu\mathrm{K}^2 \\),[18](#quad) and the upper value is used. Then
 
 \\[
 |A\_1| < 2.2 \times 10^{-7}\\ \mathrm{Mpc}^{-1}, \qquad |A\_2| < 2.8 \times 10^{-13}\\ \mathrm{Mpc}^{-2} \qquad (d\_{\rm LSS} = 12.6\\ \mathrm{Gpc}\ \text{on the same distance scale}).
@@ -928,11 +928,11 @@ If the CMB is the cosmological background, it comes from beyond the farthest sup
 
 Even placing the CMB only just beyond the farthest supernova, at 5.2 Gpc, gives \\( 5.3 \times 10^{-7} \\) and \\( 1.7 \times 10^{-12} \\). These limits are 20 to 45 times below the local supernova dipole, and \\( 4 \times 10^4 \\) to \\( 4 \times 10^5 \\) times below the supernova \\( d^2 \\) terms. So if the CMB is cosmological, the supernova anisotropies are not the patch within this metric. They are peculiar velocities, as the bulk-flow comparison suggests, or calibration and footprint effects at high redshift. These limits stand or fall with that reading of the CMB.
 
-The patch also shifts redshifts only: it does not aberrate or boost source counts. So it adds nothing to the quasar number-count dipole, which is \\( 2.7 \\) times the kinematic expectation.[^secrest][^dam]
+The patch also shifts redshifts only: it does not aberrate or boost source counts. So it adds nothing to the quasar number-count dipole, which is \\( 2.7 \\) times the kinematic expectation.[19](#secrest)[20](#dam)
 
 ## The CMB as a local standing wave: the author's view
 
-I read the CMB differently. To me it looks like a standing wave inside the Milky Way, not light from the whole universe. What suggests it is how its large-scale poles line up with our own galaxy and neighbourhood. The lowest multipoles are aligned with each other and with the ecliptic and the dipole, which led Schwarz, Starkman, Huterer and Copi to ask whether the low-\\( \ell \\) background is cosmic at all.[^lowl] This is a personal reading, not a result of this post.
+I read the CMB differently. To me it looks like a standing wave inside the Milky Way, not light from the whole universe. What suggests it is how its large-scale poles line up with our own galaxy and neighbourhood. The lowest multipoles are aligned with each other and with the ecliptic and the dipole, which led Schwarz, Starkman, Huterer and Copi to ask whether the low-\\( \ell \\) background is cosmic at all.[21](#lowl) This is a personal reading, not a result of this post.
 
 If it holds, the CMB limits above do not apply, the supernova and Shapley fits stand as measurements of the patch, and the CMB dipole becomes something to fit with a model of its source, not a bound. That fit is still to be done. A local CMB would also have to account for what ties it to distant structure:
 
@@ -943,7 +943,7 @@ If it holds, the CMB limits above do not apply, the supernova and Shapley fits s
 
 ## Curvature fixes the size of the sphere
 
-The observer's space is the three-sphere of radius \\( r \\), so it is closed, with \\( \Omega\_K = -(c/H\_0 r)^2 \\). Planck with BAO gives \\( \Omega\_K = 0.001 \pm 0.002 \\),[^planck] so \\( r > 81 \\) Gpc at \\( 2\sigma \\). DESI DR2 with the CMB gives \\( \Omega\_K = 0.0023 \pm 0.0011 \\).[^desiok] That prefers an open space at about \\( 2\sigma \\), and gives \\( r > 141 \\) Gpc at \\( 3\sigma \\).
+The observer's space is the three-sphere of radius \\( r \\), so it is closed, with \\( \Omega\_K = -(c/H\_0 r)^2 \\). Planck with BAO gives \\( \Omega\_K = 0.001 \pm 0.002 \\),[3](#planck) so \\( r > 81 \\) Gpc at \\( 2\sigma \\). DESI DR2 with the CMB gives \\( \Omega\_K = 0.0023 \pm 0.0011 \\).[22](#desiok) That prefers an open space at about \\( 2\sigma \\), and gives \\( r > 141 \\) Gpc at \\( 3\sigma \\).
 
 ## What is left of the unknowns
 
@@ -992,6 +992,8 @@ Infinity remains a bad question; whether we live off-centre in a large rotating 
 
 # Appendix A: the Lean certificates
 
+The code is in the repository of this post[2](#code).
+
 No Mathlib. `Poly.lean` is a small exact engine (about 300 lines): rationals, Laurent polynomials in a sorted normal form, derivations given by their values on generators, the coordinate tensor calculus, and rational-function identities by cross multiplication. Run `lake build` in this directory (tested with Lean 4.10, the version pinned by the flake, and 4.12), or `nix build`.
 
 - `GeodesicMonismAction.lean`
@@ -1013,6 +1015,8 @@ A computation in a polynomial ring is a proof about functions for one reason. Th
 
 # Appendix B: the SymPy and numerical checks
 
+The code is in the repository of this post[2](#code).
+
 `sh check/run_all.sh [--slow] [PANTHEON_DIR]`:
 
 - `check/solutions.py`: Kerr and Myers–Perry are Ricci flat, and Myers–Perry without the factor \\( r^2 \\) in \\( g\_{rr} \\) is not (exact arithmetic at random rational points). With `--slow`: the geodesic-monism \\( E\_{ab} = 0 \\) in SymPy, about 20 minutes, plus the same two controls as in Lean.
@@ -1027,23 +1031,42 @@ A computation in a polynomial ring is a proof about functions for one reason. Th
 - `check/sixd.py`, `check/trapping.py`: the equal rotation in both planes, its derivation and its walls.
 - `check/pantheon_fit.py`: the fits of the data section: Corollary 7 in the sky patterns \\( b\_4, b\_7, b\_2 \\), and the full Proposition 6 in \\( b\_1 \dots b\_8 \\) for comparison.
 
-[^planck]: Planck Collaboration, 2018 results VI. https://arxiv.org/abs/1807.06209
-[^shoes]: Riess et al., SH0ES. https://arxiv.org/abs/2112.04510
-[^bpt]: Bardeen, Press and Teukolsky, ApJ 178, 347 (1972). https://doi.org/10.1086/151796
-[^myersperry]: Myers and Perry, Ann. Phys. 172, 304 (1986). https://doi.org/10.1016/0003-4916(86)90186-7
-[^frolov]: Frolov and Stojković. https://arxiv.org/abs/gr-qc/0301016
-[^gmh]: Geodesic monism and its hydrogen solution. https://hadilq.com/posts/geodesic-monism-and-its-hydrogen-solution/
-[^gmono]: Geodesic monism II. https://hadilq.com/posts/geodesic-monism-ii/
-[^pantheon]: Brout et al., Pantheon+ cosmology. https://arxiv.org/abs/2202.04077
-[^pantheondata]: Pantheon+ data release. https://github.com/PantheonPlusSH0ES/DataRelease
-[^pv]: Peterson et al., Pantheon+ peculiar velocities. https://arxiv.org/abs/2110.03487
-[^cf4b]: Watkins et al., Cosmicflows-4 bulk flow. https://arxiv.org/abs/2302.02028
-[^noaniso]: "No evidence for local \\( H\_0 \\) anisotropy from Tully–Fisher or supernova distances". https://arxiv.org/abs/2509.14997
-[^secrest]: Secrest et al., a test of the cosmological principle with quasars. https://arxiv.org/abs/2009.14826
-[^dovekie]: Popovic et al., the DES-Dovekie reanalysis, and its data release. https://arxiv.org/abs/2511.07517 and https://github.com/des-science/DES-SN5YR
-[^quad]: The Planck 2018 quadrupole, \\( D\_2 \simeq 225.9\,\mu\mathrm{K}^2 \\), as quoted in "Confronting the Ellipsoidal Universe to the Planck 2018 Data". https://arxiv.org/abs/1909.05111
-[^dam]: Dam, Lewis and Brewer, a Bayesian analysis of the CatWISE number-count dipole: \\( D = (19 \pm 2) \times 10^{-3} \\), \\( 2.7 \\) times the kinematic \\( 0.0072 \\). https://arxiv.org/abs/2212.07733
-[^desiok]: "It's All Ok: Curvature in Light of BAO from DESI DR2", quoting DESI DR2 + CMB, \\( \Omega\_k = 0.0023 \pm 0.0011 \\). https://arxiv.org/abs/2505.00659
-[^blondin]: Blondin et al., time dilation in Type Ia supernova spectra at high redshift. https://arxiv.org/abs/0804.3595
-[^tolman]: Lubin and Sandage, the Tolman surface brightness test for the reality of the expansion IV. https://arxiv.org/abs/astro-ph/0106566
-[^lowl]: Schwarz, Starkman, Huterer and Copi, "Is the low-\\( \ell \\) microwave background cosmic?". https://arxiv.org/abs/astro-ph/0403353
+# References
+
+1. <a id="gmono"></a>[Geodesic monism II](https://hadilq.com/posts/geodesic-monism-ii/)
+2. <a id="code"></a>[is-the-universe-infinite: the Lean proofs and the Python checks of this post](https://github.com/hadilq/is-the-universe-infinite)
+3. <a id="planck"></a>[Planck 2018 results. VI. Cosmological parameters, Planck Collaboration](https://arxiv.org/abs/1807.06209)
+4. <a id="shoes"></a>[A comprehensive measurement of the local value of the Hubble constant, Riess et al. (SH0ES)](https://arxiv.org/abs/2112.04510)
+5. <a id="bpt"></a>[Rotating black holes: locally nonrotating frames, energy extraction, and scalar synchrotron radiation, Bardeen, Press and Teukolsky](https://doi.org/10.1086/151796)
+6. <a id="myersperry"></a>[Black holes in higher dimensional space-times, Myers and Perry](https://doi.org/10.1016/0003-4916(86)90186-7)
+7. <a id="frolov"></a>[Particle and light motion in a space-time of a five-dimensional rotating black hole, Frolov and Stojković](https://arxiv.org/abs/gr-qc/0301016)
+8. <a id="gmh"></a>[Geodesic monism and its hydrogen solution](https://hadilq.com/posts/geodesic-monism-and-its-hydrogen-solution/)
+9. <a id="blondin"></a>[Time dilation in Type Ia supernova spectra at high redshift, Blondin et al.](https://arxiv.org/abs/0804.3595)
+10. <a id="tolman"></a>[The Tolman surface brightness test for the reality of the expansion. IV, Lubin and Sandage](https://arxiv.org/abs/astro-ph/0106566)
+11. <a id="pantheon"></a>[The Pantheon+ analysis: cosmological constraints, Brout et al.](https://arxiv.org/abs/2202.04077)
+12. <a id="pantheondata"></a>[Pantheon+ data release](https://github.com/PantheonPlusSH0ES/DataRelease)
+13. <a id="pv"></a>[The Pantheon+ analysis: evaluating peculiar velocity corrections in cosmological analyses, Peterson et al.](https://arxiv.org/abs/2110.03487)
+14. <a id="noaniso"></a>[No evidence for local H0 anisotropy from Tully–Fisher or supernova distances](https://arxiv.org/abs/2509.14997)
+15. <a id="dovekie"></a>[The Dark Energy Survey Supernova Program: a reanalysis of cosmology results and evidence for evolving dark energy with an updated Type Ia supernova calibration, Popovic et al.](https://arxiv.org/abs/2511.07517)
+16. <a id="dovekiedata"></a>[DES-SN5YR and DES-Dovekie data release](https://github.com/des-science/DES-SN5YR)
+17. <a id="cf4b"></a>[Analyzing the large-scale bulk flow using CosmicFlows4: increasing tension with the standard cosmological model, Watkins et al.](https://arxiv.org/abs/2302.02028)
+18. <a id="quad"></a>[Confronting the ellipsoidal universe to the Planck 2018 data](https://arxiv.org/abs/1909.05111)
+19. <a id="secrest"></a>[A test of the cosmological principle with quasars, Secrest et al.](https://arxiv.org/abs/2009.14826)
+20. <a id="dam"></a>[Testing the cosmological principle with CatWISE quasars: a Bayesian analysis of the number-count dipole, Dam, Lewis and Brewer](https://arxiv.org/abs/2212.07733)
+21. <a id="lowl"></a>[Is the low-l microwave background cosmic?, Schwarz, Starkman, Huterer and Copi](https://arxiv.org/abs/astro-ph/0403353)
+22. <a id="desiok"></a>[It's all Ok: curvature in light of BAO from DESI DR2](https://arxiv.org/abs/2505.00659)
+
+# Cite
+
+If you found this work useful, please consider citing:
+
+```
+@misc{hadilq2026Infinite,
+    author = {{Hadi Lashkari Ghouchani and Claude (Anthropic)}},
+    note = {Published electronically at \url{https://hadilq.com/posts/is-the-universe-infinite/}},
+    gitlab = {Gitlab source at \href{https://gitlab.com/hadilq/hadilq.gitlab.io/-/tree/main/content/posts/2026-10-05-is-the-universe-infinite}},
+    github = {Proofs and checks at \href{https://github.com/hadilq/is-the-universe-infinite}},
+    title = {Is the universe infinite?},
+    year={2026},
+}
+```
